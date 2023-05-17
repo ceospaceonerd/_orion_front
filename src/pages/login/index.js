@@ -190,20 +190,20 @@ const LoginPage = () => {
             </svg>
             <Box sx={{ my: 6 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
-                {`Welcome to ${themeConfig.templateName}! 👋🏻`}
+                {`Bienvenido a ${themeConfig.templateName}! 👋🏻`}
               </Typography>
               <Typography sx={{ color: 'text.secondary' }}>
-                Please sign-in to your account and start the adventure
+                Inicia sesión en tu cuenta y comienza la aventura
               </Typography>
             </Box>
-            <Alert icon={false} sx={{ py: 3, mb: 6, ...bgColors.primaryLight, '& .MuiAlert-message': { p: 0 } }}>
+            {/* <Alert icon={false} sx={{ py: 3, mb: 6, ...bgColors.primaryLight, '& .MuiAlert-message': { p: 0 } }}>
               <Typography variant='body2' sx={{ mb: 2, color: 'primary.main' }}>
                 Admin: <strong>admin@vuexy.com</strong> / Pass: <strong>admin</strong>
               </Typography>
               <Typography variant='body2' sx={{ color: 'primary.main' }}>
                 Client: <strong>client@vuexy.com</strong> / Pass: <strong>client</strong>
               </Typography>
-            </Alert>
+            </Alert> */}
             <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
               <FormControl fullWidth sx={{ mb: 4 }}>
                 <Controller
@@ -271,19 +271,19 @@ const LoginPage = () => {
                 }}
               >
                 <FormControlLabel
-                  label='Remember Me'
+                  label='Recuerdame'
                   control={<Checkbox checked={rememberMe} onChange={e => setRememberMe(e.target.checked)} />}
                 />
-                <LinkStyled href='/forgot-password'>Forgot Password?</LinkStyled>
+                <LinkStyled href='/forgot-password'>Olvidaste la contraseña?</LinkStyled>
               </Box>
               <Button fullWidth size='large' type='submit' variant='contained' sx={{ mb: 4 }}>
                 Login
               </Button>
               <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-                <Typography sx={{ color: 'text.secondary', mr: 2 }}>New on our platform?</Typography>
+                <Typography sx={{ color: 'text.secondary', mr: 2 }}>Nuevo en nuestra plataforma?</Typography>
                 <Typography variant='body2'>
                   <LinkStyled href='/register' sx={{ fontSize: '1rem' }}>
-                    Create an account
+                    Crear una cuenta
                   </LinkStyled>
                 </Typography>
               </Box>
@@ -295,7 +295,7 @@ const LoginPage = () => {
                   my: theme => `${theme.spacing(6)} !important`
                 }}
               >
-                or
+                o
               </Divider>
               <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <IconButton href='/' component={Link} sx={{ color: '#497ce2' }} onClick={e => e.preventDefault()}>

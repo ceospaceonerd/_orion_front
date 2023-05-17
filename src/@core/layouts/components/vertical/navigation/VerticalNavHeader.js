@@ -12,6 +12,26 @@ import Icon from 'src/@core/components/icon'
 
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
+import AutomateRegular from './fonts/AutomateRegular.woff2';
+const theme = createTheme({
+  typography: {
+    fontFamily: 'AutomateRegular, Arial',
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-family: 'AutomateRegular';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+          src: local('AutomateRegular'), local('AutomateRegular), url(${AutomateRegular}) format('woff2');
+          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+        }
+      `,
+    },
+  },
+});
 
 // ** Styled Components
 const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
@@ -25,7 +45,7 @@ const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
 
 const HeaderTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
-  fontFamily:'Automate',
+  fontFamily:'AutomateRegular',
   lineHeight: '24px',
   fontSize: '1.375rem !important',
   color: theme.palette.text.warning,

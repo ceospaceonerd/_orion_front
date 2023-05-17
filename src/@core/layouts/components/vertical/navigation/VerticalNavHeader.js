@@ -12,26 +12,7 @@ import Icon from 'src/@core/components/icon'
 
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
-import AutomateRegular from './fonts/AutomateRegular.woff2';
-const theme = createTheme({
-  typography: {
-    fontFamily: 'AutomateRegular, Arial',
-  },
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: `
-        @font-face {
-          font-family: 'AutomateRegular';
-          font-style: normal;
-          font-display: swap;
-          font-weight: 400;
-          src: local('AutomateRegular'), local('AutomateRegular), url(${AutomateRegular}) format('woff2');
-          unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
-        }
-      `,
-    },
-  },
-});
+// 
 
 // ** Styled Components
 const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
@@ -45,10 +26,10 @@ const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
 
 const HeaderTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
-  fontFamily:'AutomateRegular',
+  fontFamily:'Roboto',
   lineHeight: '24px',
   fontSize: '1.375rem !important',
-  color: theme.palette.text.warning,
+  color: '#D0922F',
   transition: 'opacity .25s ease-in-out, margin .25s ease-in-out'
 }))
 
@@ -114,34 +95,7 @@ const VerticalNavHeader = props => {
         userNavMenuBranding(props)
       ) : (
         <LinkStyled href='/'>
-          <svg width={32} height={22} viewBox='0 0 32 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
-            <path
-              fillRule='evenodd'
-              clipRule='evenodd'
-              fill={theme.palette.primary.main}
-              d='M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z'
-            />
-            <path
-              fill='#161616'
-              opacity={0.06}
-              fillRule='evenodd'
-              clipRule='evenodd'
-              d='M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z'
-            />
-            <path
-              fill='#161616'
-              opacity={0.06}
-              fillRule='evenodd'
-              clipRule='evenodd'
-              d='M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z'
-            />
-            <path
-              fillRule='evenodd'
-              clipRule='evenodd'
-              fill={theme.palette.primary.main}
-              d='M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z'
-            />
-          </svg>
+          <img src='/images/logo-spaceone.svg' alt='logo' width='48' height='32' />
           <HeaderTitle variant='h6' sx={{ ...menuCollapsedStyles, ...(navCollapsed && !navHover ? {} : { ml: 2.5 }) }}>
             {themeConfig.templateName}
           </HeaderTitle>
@@ -157,7 +111,7 @@ const VerticalNavHeader = props => {
             p: 0,
             backgroundColor: 'transparent !important',
             color: `${
-              mode === 'semi-dark' ? `rbga(${theme.palette.customColors.dark}, 0.6)` : theme.palette.text.secondary
+              mode === 'dark' ? `rbga(${theme.palette.customColors.dark}, 0.6)` : theme.palette.text.secondary
             } !important`
           }}
         >

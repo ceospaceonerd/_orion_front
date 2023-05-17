@@ -46,7 +46,8 @@ const themeOptions = (settings: Settings): ThemeOptions => {
             'sans-serif',
             '"Apple Color Emoji"',
             '"Segoe UI Emoji"',
-            '"Segoe UI Symbol"'
+            '"Segoe UI Symbol"',
+            '"Automate"'
           ].join(',')
       },
       shadows: shadows(mode === 'semi-dark' ? 'light' : mode),

@@ -12,16 +12,15 @@ const UserThemeOptions = () => {
   // ** To use core palette, uncomment the below line
   // const palette = corePalette(mode as PaletteMode, skin)
   return {
-    typography: {
-      fontFamily: '"Automate", sans-serif',
-      h6: {
-        fontFamily: '"Automate", sans-serif',
-        fontWeight: 700,
-        fontSize: '3.5rem',
-        lineHeight: 1.375
-      }
-    }
-
+    // typography: {
+    //   fontFamily: '"Automate", sans-serif',
+    //   h6: {
+    //     fontFamily: '"Automate", sans-serif',
+    //     fontWeight: 700,
+    //     fontSize: '3.5rem',
+    //     lineHeight: 1.375
+    //   }
+    // }
     /*
     palette:{
       primary: {

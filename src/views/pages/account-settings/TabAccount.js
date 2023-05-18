@@ -120,7 +120,7 @@ const TabAccount = () => {
       {/* Account Details Card */}
       <Grid item xs={12}>
         <Card>
-          <CardHeader title='Profile Details' />
+          <CardHeader title='Informacion Empresarial' />
           <form>
             <CardContent sx={{ pt: 0 }}>
               <Box sx={{ display: 'flex', alignItems: 'center' }}>

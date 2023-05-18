@@ -29,7 +29,7 @@ const HeaderTitle = styled(Typography)(({ theme }) => ({
   fontFamily:'Audiowide', 
   lineHeight: '24px',
   fontSize: '1.375rem !important',
-  color: '#D0922F',
+  fontColor:'#D0922F',
   transition: 'opacity .25s ease-in-out, margin .25s ease-in-out'
 }))
 
@@ -95,7 +95,7 @@ const VerticalNavHeader = props => {
         userNavMenuBranding(props)
       ) : (
         <LinkStyled href='/'>
-          <img src='/images/logo-spaceone.svg' alt='logo' width='48' height='32' />
+          <img src='/images/logo-spaceone.svg' alt='logo' width='32' height='32' />
           <HeaderTitle variant='h6' sx={{ ...menuCollapsedStyles, ...(navCollapsed && !navHover ? {} : { ml: 2.5 }) }}>
             {themeConfig.templateName}
           </HeaderTitle>

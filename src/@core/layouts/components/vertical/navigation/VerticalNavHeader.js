@@ -29,7 +29,6 @@ const HeaderTitle = styled(Typography)(({ theme }) => ({
   fontFamily:'Audiowide', 
   lineHeight: '24px',
   fontSize: '1.375rem !important',
-  color: `rgba(${theme.palette.text.warning}, 0.87)`,
   transition: 'opacity .25s ease-in-out, margin .25s ease-in-out'
 }))
 
@@ -75,7 +74,7 @@ const VerticalNavHeader = props => {
     if (mode === 'semi-dark') {
       return {
         '& .MuiTypography-root, & .MuiIconButton-root': {
-          color: `rgba(${theme.palette.customColors.dark}, 0.87)`
+         color: '#D0922F'
         }
       }
     } else {
@@ -96,7 +95,7 @@ const VerticalNavHeader = props => {
       ) : (
         <LinkStyled href='/'>
           <img src='/images/logo-spaceone.svg' alt='logo' width='32' height='32' />
-          <HeaderTitle variant='h6' sx={{ ...menuCollapsedStyles, ...(navCollapsed && !navHover ? {} : { ml: 2.5 }) }}>
+          <HeaderTitle variant='h6' sx={{ ...menuCollapsedStyles, ...(navCollapsed && !navHover ? {} : { ml: 0.05 } )}}>
             {themeConfig.templateName}
           </HeaderTitle>
         </LinkStyled>

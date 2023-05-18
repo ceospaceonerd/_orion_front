@@ -12,7 +12,7 @@ const users = [
     id: 1,
     role: 'admin',
     password: 'admin',
-    fullName: 'Samuel Guzman',
+    fullName: 'Raymol Mateo',
     username: 'johndoe',
     email: 'admin@vuexy.com'
   },

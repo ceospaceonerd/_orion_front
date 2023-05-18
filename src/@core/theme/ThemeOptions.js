@@ -42,7 +42,7 @@ const themeOptions = settings => {
             '"Apple Color Emoji"',
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"',
-            '"AutomateRegular"'
+            '"Audiowide"'
           ].join(',')
       },
       shadows: shadows(mode === 'semi-dark' ? 'light' : mode),

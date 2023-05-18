@@ -26,7 +26,7 @@ const MenuHeaderWrapper = styled(Box)(({ theme }) => ({
 
 const HeaderTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
-  fontFamily:'Roboto',
+  fontFamily:'Audiowide', 
   lineHeight: '24px',
   fontSize: '1.375rem !important',
   color: '#D0922F',

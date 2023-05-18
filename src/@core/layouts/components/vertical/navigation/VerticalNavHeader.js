@@ -29,7 +29,7 @@ const HeaderTitle = styled(Typography)(({ theme }) => ({
   fontFamily:'Audiowide', 
   lineHeight: '24px',
   fontSize: '1.375rem !important',
-  fontColor:'#D0922F',
+  color: `rgba(${theme.palette.text.warning}, 0.87)`,
   transition: 'opacity .25s ease-in-out, margin .25s ease-in-out'
 }))
 

@@ -143,39 +143,18 @@ const navigation = () => {
       ]
     },
     {
-      title: 'Pages',
-      icon: 'tabler:file',
-      children: [
-        {
-          title: 'User Profile',
-          children: [
-            {
-              title: 'Profile',
-              path: '/pages/user-profile/profile'
-            },
-            {
-              title: 'Teams',
-              path: '/pages/user-profile/teams'
-            },
-            {
-              title: 'Projects',
-              path: '/pages/user-profile/projects'
-            },
-            {
-              title: 'Connections',
-              path: '/pages/user-profile/connections'
-            }
-          ]
-        },
-        {
-          title: 'FAQ',
-          path: '/pages/faq'
-        },
-        {
-          title: 'Help Center',
-          path: '/pages/help-center'
-        }
-      ]
+      sectionTitle: 'FAQ & Help Center'
+    },
+
+    {
+      title: 'FAQ',
+      icon: 'tabler:lifebuoy',
+      path: '/pages/faq'
+    },
+    {
+      title: 'Help Center',
+      icon: 'tabler:help-circle',
+      path: '/pages/help-center'
     }
   ]
 }

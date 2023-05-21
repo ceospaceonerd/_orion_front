@@ -31,6 +31,18 @@ const LanguageDropdown = ({ settings, saveSettings }) => {
               saveSettings({ ...settings, direction: 'ltr' })
             }
           }
+        },    
+        
+        {
+          text: 'Spanish',
+          menuItemProps: {
+            sx: { py: 2 },
+            selected: i18n.language === 'es',
+            onClick: () => {
+              handleLangItemClick('es')
+              saveSettings({ ...settings, direction: 'ltr' })
+            }
+          }
         },
         {
           text: 'French',

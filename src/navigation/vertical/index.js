@@ -40,31 +40,58 @@ const navigation = () => {
       path: '/apps/calendar'
     },
     {
+      title: 'Invoice',
+      icon: 'tabler:file-dollar',
+      children: [
+        {
+          title: 'List',
+          path: '/apps/invoice/list'
+        },
+        {
+          title: 'Preview',
+          path: '/apps/invoice/preview'
+        },
+        {
+          title: 'Edit',
+          path: '/apps/invoice/edit'
+        },
+        {
+          title: 'Add',
+          path: '/apps/invoice/add'
+        }
+      ]
+    },
+    {
       sectionTitle: 'Settings & Security'
     },
-    ,
+
     {
-      title: 'Account Settings',
+      title: 'General Settings',
       icon: 'tabler:settings',
       children: [
         {
-          title: 'Account',
+          title: 'Profile',
+          icon: 'tabler:user',
           path: '/pages/account-settings/account'
         },
         {
-          title: 'Security',
+          title: 'Company',
+          icon: 'tabler:building',
           path: '/pages/account-settings/security'
         },
         {
           title: 'Billing',
+          icon: 'tabler:file-invoice',
           path: '/pages/account-settings/billing'
         },
         {
           title: 'Notifications',
+          icon: 'tabler:notification',
           path: '/pages/account-settings/notifications'
         },
         {
           title: 'Connections',
+          icon: 'tabler:social',
           path: '/pages/account-settings/connections'
         },
         {
@@ -84,61 +111,9 @@ const navigation = () => {
           ]
         },
         {
-          title: 'User',
+          title: 'Users',
           icon: 'tabler:users-group',
-          children: [
-            {
-              title: 'List',
-              path: '/apps/user/list'
-            },
-            {
-              title: 'View',
-              children: [
-                {
-                  title: 'Account',
-                  path: '/apps/user/view/account'
-                },
-                {
-                  title: 'Security',
-                  path: '/apps/user/view/security'
-                },
-                {
-                  title: 'Billing & Plans',
-                  path: '/apps/user/view/billing-plan'
-                },
-                {
-                  title: 'Notifications',
-                  path: '/apps/user/view/notification'
-                },
-                {
-                  title: 'Connection',
-                  path: '/apps/user/view/connection'
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      title: 'Invoice',
-      icon: 'tabler:file-dollar',
-      children: [
-        {
-          title: 'List',
-          path: '/apps/invoice/list'
-        },
-        {
-          title: 'Preview',
-          path: '/apps/invoice/preview'
-        },
-        {
-          title: 'Edit',
-          path: '/apps/invoice/edit'
-        },
-        {
-          title: 'Add',
-          path: '/apps/invoice/add'
+          path: '/apps/user/list'
         }
       ]
     },

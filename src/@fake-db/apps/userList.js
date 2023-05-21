@@ -59,6 +59,7 @@ const data = {
       currentPlan: 'team',
       status: 'inactive',
       avatar: '/images/avatars/3.png'
+      
     },
     {
       id: 5,

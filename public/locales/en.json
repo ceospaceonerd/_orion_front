@@ -28,7 +28,7 @@
   "Teams": "Teams",
   "Projects": "Projects",
   "Connections": "Connections",
-  "Account Settings": "Account Settings",
+  "General Settings": "General Settings",
   "Account": "Account",
   "Billing": "Billing",
   "FAQ": "FAQ",
@@ -129,5 +129,8 @@
   "Menu Level 3.2": "Menu Level 3.2",
   "Disabled Menu": "Disabled Menu",
   "Raise Support": "Raise Support",
-  "Documentation": "Documentation"
+  "Documentation": "Documentation",
+  "Company": "Company",
+  "FAQ & Help Center": "FAQ & Help Center",
+  "SETTINGS & SECURITY": "SETTINGS & SECURITY"
 }

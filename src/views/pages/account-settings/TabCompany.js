@@ -113,7 +113,7 @@ const recentDeviceData = [
   }
 ]
 
-const TabSecurity = () => {
+const TabCompany = () => {
   return (
     <Grid container spacing={6}>
       <Grid item xs={12}>
@@ -214,4 +214,4 @@ const TabSecurity = () => {
   )
 }
 
-export default TabSecurity
+export default TabCompany

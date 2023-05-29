@@ -20,9 +20,9 @@ import CircularProgress from '@mui/material/CircularProgress'
 import Icon from 'src/@core/components/icon'
 
 // ** Demo Tabs Imports
-import TabAccount from 'src/views/pages/account-settings/TabAccount'
+import TabProfile from 'src/views/pages/account-settings/TabProfile'
 import TabBilling from 'src/views/pages/account-settings/TabBilling'
-import TabSecurity from 'src/views/pages/account-settings/TabSecurity'
+import TabCompany from 'src/views/pages/account-settings/TabCompany'
 import TabConnections from 'src/views/pages/account-settings/TabConnections'
 import TabNotifications from 'src/views/pages/account-settings/TabNotifications'
 
@@ -67,8 +67,8 @@ const AccountSettings = ({ tab, apiPricingPlanData }) => {
   }, [tab])
 
   const tabContentList = {
-    account: <TabAccount />,
-    security: <TabSecurity />,
+    profile: <TabProfile />,
+    company: <TabCompany />,
     connections: <TabConnections />,
     notifications: <TabNotifications />,
     billing: <TabBilling apiPricingPlanData={apiPricingPlanData} />
@@ -87,20 +87,20 @@ const AccountSettings = ({ tab, apiPricingPlanData }) => {
                 aria-label='customized tabs example'
               >
                 <Tab
-                  value='account'
+                  value='profile'
                   label={
                     <Box sx={{ display: 'flex', alignItems: 'center', ...(!hideText && { '& svg': { mr: 2 } }) }}>
                       <Icon fontSize='1.25rem' icon='tabler:users' />
-                      {!hideText && 'Account'}
+                      {!hideText && 'Profile'}
                     </Box>
                   }
                 />
                 <Tab
-                  value='security'
+                  value='company'
                   label={
                     <Box sx={{ display: 'flex', alignItems: 'center', ...(!hideText && { '& svg': { mr: 2 } }) }}>
-                      <Icon fontSize='1.25rem' icon='tabler:lock' />
-                      {!hideText && 'Security'}
+                      <Icon fontSize='1.25rem' icon='tabler:building' />
+                      {!hideText && 'Company'}
                     </Box>
                   }
                 />

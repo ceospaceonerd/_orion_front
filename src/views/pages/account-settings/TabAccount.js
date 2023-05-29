@@ -26,6 +26,18 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 import CardMedia from '@mui/material/CardMedia'
 import Avatar from '@mui/material/Avatar'
 
+import Table from '@mui/material/Table'
+import TableBody from '@mui/material/TableBody'
+import TableCell from '@mui/material/TableCell'
+import TableContainer from '@mui/material/TableContainer'
+import TableFooter from '@mui/material/TableFooter'
+import TableHead from '@mui/material/TableHead'
+import TableRow from '@mui/material/TableRow'
+import Paper from '@mui/material/Paper'
+import IconButton from '@mui/material/IconButton'
+import Chip from '@mui/material/Chip'
+import Avatar from '@mui/material/Avatar'
+
 // ** Third Party Imports
 import { useForm, Controller } from 'react-hook-form'
 
@@ -33,16 +45,25 @@ import { useForm, Controller } from 'react-hook-form'
 import Icon from 'src/@core/components/icon'
 
 const initialData = {
-  state: 'Florida',
-  number: '',
-  address: '',
-  zipCode: '',
+  role: 'CEO',
+  profile: 'Administrator',
+  phoneNumber: '809-555-9999',
+  telNumber: '809-999-8888',
+  address: [
+    {
+      street: 'Calle Flamenco # 16 APT 1',
+      city: 'Santo Domingo Este',
+      state: 'Santo Domingo',
+      zipcode: '11804',
+      country: 'DO'
+    }
+  ],
   lastName: 'Doe',
-  currency: 'usd',
   firstName: 'John',
-  language: 'arabic',
+  currency: 'USD',
+  language: 'english',
+  dob: '03/12/1993',
   timezone: 'gmt-12',
-  country: 'USA',
   organization: 'Space One',
   email: 'john.doe@example.com'
 }
@@ -151,59 +172,144 @@ const TabAccount = () => {
                 <Typography variant='h4'>
                   {formData.firstName} {formData.lastName}
                 </Typography>
+                
+            
                 <Typography variant='caption'>
-                  {formData.state} at {formData.country}
+                  {formData.role} at {formData.organization}
                 </Typography>
               </Box>
-              <Button variant='contained'>Send Request</Button>
+              <IconButton color='primary' aria-label='edit'>
+                <Icon icon='tabler:pencil' />
+              </IconButton>
             </Box>
             <Box
               sx={{ gap: 2, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center' }}
             ></Box>
 
             {/* <Typography variant='h6' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}></Typography> */}
+            <CardHeader title='User information' />
+            <TableContainer component={Paper}>
+              <Table sx={{ minWidth: 650 }} aria-label='simple table'>
+                <TableBody>
+                  <TableRow>
+                    <TableCell>First Name</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.firstName}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>Date of birth</TableCell>
+                    <TableCell align='left'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.dob}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
 
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-              <Grid item xs={6}>
-                <Typography variant='h6' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
-                  Email
-                </Typography>
-              </Grid>
+                  <TableRow>
+                    <TableCell>Last Name</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.lastName}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>Email</TableCell>
+                    <TableCell align='left'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.email}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>Role</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.role}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>Profile</TableCell>
+                    <TableCell align='left'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.profile}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>Phone</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.phoneNumber}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>Tel</TableCell>
+                    <TableCell align='left'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.telNumber}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>Currency</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.currency}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>Language</TableCell>
+                    <TableCell align='left'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.language}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
 
-              <Grid item xs={6}>
-                {formData.email}
-              </Grid>
-              <Divider />
-              <Grid item xs={6}>
-                <Divider />
-                <Typography variant='h6' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
-                  Phone Number
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                {formData.number}
-              </Grid>
-              <Divider />
-              <Grid item xs={6}>
-                <Typography variant='h6' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}></Typography>
-              </Grid>
-              <Grid item xs={6}></Grid>
-              <Divider />
-              <Grid item xs={6}>
-                <Typography variant='h6' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}></Typography>
-              </Grid>
-              <Grid item xs={6}></Grid>
-              <Divider />
-              <Grid item xs={6}>
-                <Typography variant='h6' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}></Typography>
-              </Grid>
-              <Grid item xs={6}></Grid>
-              <Divider />
-              <Grid item xs={6}>
-                <Typography variant='h6' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}></Typography>
-              </Grid>
-              <Grid item xs={6}></Grid>
-            </Grid>
+            <CardHeader title='Address information' />
+            <TableContainer component={Paper}>
+              <Table sx={{ minWidth: 650 }} aria-label='simple table'>
+                <TableBody>
+                  <TableRow>
+                    <TableCell>Street</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.address[0].street}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>City</TableCell>
+                    <TableCell align='left'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.address[0].city}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
+
+                  <TableRow>
+                    <TableCell>State</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.address[0].state}
+                      </Typography>
+                    </TableCell>
+                    <TableCell>Zip Code</TableCell>
+                    <TableCell align='left'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.address[0].zipcode}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>Country</TableCell>
+                    <TableCell align='right'>
+                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                        {formData.address[0].country}
+                      </Typography>
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
           </CardContent>
         </Card>
       </Grid>

@@ -160,7 +160,7 @@ const LoginPage = () => {
           }}
         >
           <Box sx={{ width: '100%', maxWidth: 400 }}>
-            <img src='/images/logo-spaceone.svg' alt='logo' width='34' height='23.75' />
+            <img src='/images/logo-spaceone.svg' alt='logo' width='34' height='34.75' />
             <Box sx={{ my: 6 }}>
               <Typography sx={{ mb: 1.5, fontWeight: 500, fontSize: '1.625rem', lineHeight: 1.385 }}>
                 {`Bienvenido a ${themeConfig.templateName}! 👋🏻`}

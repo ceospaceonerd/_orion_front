@@ -36,7 +36,6 @@ import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 import IconButton from '@mui/material/IconButton'
 import Chip from '@mui/material/Chip'
-import Avatar from '@mui/material/Avatar'
 
 // ** Third Party Imports
 import { useForm, Controller } from 'react-hook-form'
@@ -92,7 +91,7 @@ const ResetButtonStyled = styled(Button)(({ theme }) => ({
   }
 }))
 
-const TabAccount = () => {
+const TabProfile = () => {
   // ** State
   const [open, setOpen] = useState(false)
   const [inputValue, setInputValue] = useState('')
@@ -171,9 +170,16 @@ const TabAccount = () => {
               <Box sx={{ mr: 2, mb: 1, display: 'flex', flexDirection: 'column' }}>
                 <Typography variant='h4'>
                   {formData.firstName} {formData.lastName}
+                  <Chip
+                    label={formData.profile}
+                    avatar={
+                      <Avatar>
+                        <Icon icon='tabler:user-shield' fontSize={20} />
+                      </Avatar>
+                    }
+                  />
                 </Typography>
-                
-            
+
                 <Typography variant='caption'>
                   {formData.role} at {formData.organization}
                 </Typography>
@@ -438,4 +444,4 @@ const TabAccount = () => {
   )
 }
 
-export default TabAccount
+export default TabProfile

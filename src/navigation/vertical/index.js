@@ -72,12 +72,12 @@ const navigation = () => {
         {
           title: 'Profile',
           icon: 'tabler:user',
-          path: '/pages/account-settings/account'
+          path: '/pages/account-settings/profile'
         },
         {
           title: 'Company',
           icon: 'tabler:building',
-          path: '/pages/account-settings/security'
+          path: '/pages/account-settings/company'
         },
         {
           title: 'Billing',

@@ -200,13 +200,13 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>First Name</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.firstName}
                       </Typography>
                     </TableCell>
                     <TableCell>Date of birth</TableCell>
                     <TableCell align='left'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.dob}
                       </Typography>
                     </TableCell>
@@ -215,13 +215,13 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>Last Name</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.lastName}
                       </Typography>
                     </TableCell>
                     <TableCell>Email</TableCell>
                     <TableCell align='left'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.email}
                       </Typography>
                     </TableCell>
@@ -229,13 +229,13 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>Role</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.role}
                       </Typography>
                     </TableCell>
                     <TableCell>Profile</TableCell>
                     <TableCell align='left'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.profile}
                       </Typography>
                     </TableCell>
@@ -243,13 +243,13 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>Phone</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.phoneNumber}
                       </Typography>
                     </TableCell>
                     <TableCell>Tel</TableCell>
                     <TableCell align='left'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.telNumber}
                       </Typography>
                     </TableCell>
@@ -257,13 +257,13 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>Currency</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.currency}
                       </Typography>
                     </TableCell>
                     <TableCell>Language</TableCell>
                     <TableCell align='left'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.language}
                       </Typography>
                     </TableCell>
@@ -279,13 +279,13 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>Street</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.address[0].street}
                       </Typography>
                     </TableCell>
                     <TableCell>City</TableCell>
                     <TableCell align='left'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.address[0].city}
                       </Typography>
                     </TableCell>
@@ -294,13 +294,13 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>State</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.address[0].state}
                       </Typography>
                     </TableCell>
                     <TableCell>Zip Code</TableCell>
                     <TableCell align='left'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.address[0].zipcode}
                       </Typography>
                     </TableCell>
@@ -308,7 +308,7 @@ const TabProfile = () => {
                   <TableRow>
                     <TableCell>Country</TableCell>
                     <TableCell align='right'>
-                      <Typography variant='subtitle1' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
+                      <Typography variant='subtitle2' sx={{ whiteSpace: 'nowrap', color: 'text.primary' }}>
                         {formData.address[0].country}
                       </Typography>
                     </TableCell>

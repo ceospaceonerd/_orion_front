@@ -1,6 +1,3 @@
-// ** React Imports
-import { useState } from 'react'
-
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
@@ -116,42 +113,12 @@ const recentDeviceData = [
   }
 ]
 
-const initialData = {
-  company: [
-    {
-      id: 1,
-      rnc: '123445',
-      ceo: 'Galen Slixby',
-      name: 'Yotz PVT LTD',
-      address: 'editor',
-      fiscalyear: '01/02/2023',
-      country: 'El Salvador',
-      contact: '(479) 232-9151',
-      email: 'gslixby0@abc.net.au',
-      currentPlan: 'enterprise',
-      status: 'active',
-      logo: '',
-      currency: 'DOP',
-      businesshours: [
-        {
-          id: 1,
-          day: 'Monday',
-          open: '9:00 AM',
-          close: '6:00 PM'
-        }
-      ]
-    }
-  ]
-}
-
 const TabCompany = () => {
-  const [formData, setFormData] = useState(initialData)
-  const [imgSrc, setImgSrc] = useState(formData.logo)
-
   return (
     <Grid container spacing={6}>
-      <Grid item xs={12}></Grid>
-
+      <Grid item xs={12}>
+        <ChangePasswordCard />
+      </Grid>
       <Grid item xs={12}>
         <TwoFactorAuthentication />
       </Grid>

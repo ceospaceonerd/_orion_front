@@ -19,8 +19,8 @@ const data ={
       currency:'DOP',
       businesshours: [{
         id:1,
-        day:'Monday',
-        open:'9:00 AM',
+        day:'primary',
+        open:'9:00 AM'
         close :'6:00 PM'}]
     }]
 }
@@ -37,7 +37,7 @@ mock.onPost('/register/company/add-company').reply(config => {
   }
   user.id = lastIndex + 1
   data.users.unshift({ ...company, logo:'',rnc: '', ceo: '', name: '',address:'',fiscalyear:'',country:'',contact:'',email:'',
-  currency:''})
+  currency:'', businesshours:[id:'',open:'',close:'']})
 
   return [201, { user }]
 })

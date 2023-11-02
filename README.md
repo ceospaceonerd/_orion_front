@@ -5,8 +5,8 @@ Este repositorio está destinado a servir como una plantilla general sobre cómo
 Cualquier comentario o recomendación les pedimos generar un issue de consulta o escribirnos directamente a spaceonerd.com
 
 
-<h1 align="center"> Nombre de la herramienta</h1>
-<p align="center"> Logo e imagen o gif de la interfaz principal de la herramienta</p>
+<h1 align="center"> OneSuite</h1>
+<p align="center"><img src="https://spaceonerd.com/assets/img/logo.png"></p>
 <p align="center"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*94Z17dA4rkLL5pOon2ZbCw.jpeg"/></p> 
 
 ## Tabla de contenidos:
@@ -24,7 +24,7 @@ Cualquier comentario o recomendación les pedimos generar un issue de consulta o
 
 ## Descripción y Contexto
 ---
-Asegúrate de empezar este archivo con una breve descripción sobre las funcionalidades y contexto de la herramienta digital. Sé conciso y coherente.
+OneSuite en una solucion de negocios que permite gestionar las actividades de un comercio con las diferentes herramientas disponibles desde cualquier lugar
 
 ## Avisos
 ---

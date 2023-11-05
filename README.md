@@ -1,8 +1,4 @@
-> *Esta herramienta digital forma parte del catálogo de herramientas del **Banco Interamericano de Desarrollo**. Puedes conocer más sobre la iniciativa del BID en [code.iadb.org](https://code.iadb.org)*
 
-## Plantilla de Documentación de Soporte y Uso de herramientas digitales - README.md
-Este repositorio está destinado a servir como una plantilla general sobre cómo configurar nuevos repositorios en la organización @spaceonerd. 
-Cualquier comentario o recomendación les pedimos generar un issue de consulta o escribirnos directamente a spaceonerd.com
 
 
 <h1 align="center"> One Suite</h1>

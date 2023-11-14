@@ -36,7 +36,7 @@
     "@popperjs/core": "2.11.6",
     "@reduxjs/toolkit": "1.9.1",
     "apexcharts-clevision": "3.28.5",
-    "axios": "1.2.2",
+    "axios": "1.6.0",
     "axios-mock-adapter": "1.21.2",
     "babel-eslint": "10.1.0",
     "bootstrap-icons": "1.10.3",

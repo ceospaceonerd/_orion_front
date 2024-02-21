@@ -2,7 +2,7 @@
 
 
 <h1 align="center"> One Suite</h1>
-<p align="center"><img src="https://spaceonerd.com/assets/img/logo.png"></p>
+<p align="center"><img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYRDDk2EynD6PDKHaGG9i8ey1qbfNLh_UAbyLs5EcqXe2y1_kYhaMRssGD-qaB8aJ6MXaa-9jBn26H2AtDuQhNicgx3f=w1912-h976" class="ndfHFb-c4YZDc-HiaYvf-RJLb9c" alt="Mostrando logo-tipo-onesuitexxxhdpi.png" aria-hidden="true"></p>
 <!-- <p align="center"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*94Z17dA4rkLL5pOon2ZbCw.jpeg"/></p>  -->
 
 ## Tabla de contenidos:
